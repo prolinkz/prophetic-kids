@@ -4,19 +4,19 @@
 <head>
     <base href="../../">
     <meta charset="utf-8">
-    <meta name="author" content="Softnio">
+    <meta name="author" content="Prolinkz">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <meta name="description" content="Multiplication Network">
+    <meta name="description" content="Prophetic Kids">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="{{ url('/') }}/icon.png">
+    <link rel="shortcut icon" href="{{ url('/') }}/logo.jpg">
     <!-- Page Title  -->
-    <title>Multiplication Network</title>
+    <title>Prophetic Kids</title>
     <!-- StyleSheets  -->
     @yield('css')
     <link rel="stylesheet" href="{{ url('/backend') }}/assets/css/dashlite.css?ver=2.9.0">
@@ -89,13 +89,13 @@
                 <div class="nk-sidebar-element nk-sidebar-head">
                     <div class="nk-sidebar-brand">
                         <a href="/" class="logo-link nk-sidebar-logo">
-                            <img class="logo-light logo-img" src="{{ url('/') }}/icon.png"
-                                srcset="{{ url('/') }}/icon.png 2x" alt="logo"> &nbsp; <p
-                                class="text text-secondary ml-5 mb-4" style="font-size:15px;">Multiplication Network</p>
-                            <img class="logo-dark logo-img" src="{{ url('/') }}/icon.png"
-                                srcset="{{ url('/') }}/icon.png 2x" alt="logo-dark">
-                            <img class="logo-small logo-img logo-img-small" src="{{ url('/') }}/icon.png"
-                                srcset="{{ url('/') }}/icon.png 2x" alt="logo-small">
+                            <img class="logo-light logo-img" src="{{ url('/') }}/logo.jpg"
+                                srcset="{{ url('/') }}/logo.jpg 2x" alt="logo"> &nbsp; <p
+                                class="text text-secondary ml-5 mb-4" style="font-size:15px;">Prophetic Kids</p>
+                            <img class="logo-dark logo-img" src="{{ url('/') }}/logo.jpg"
+                                srcset="{{ url('/') }}/logo.jpg 2x" alt="logo-dark">
+                            <img class="logo-small logo-img logo-img-small" src="{{ url('/') }}/logo.jpg"
+                                srcset="{{ url('/') }}/logo.jpg 2x" alt="logo-small">
                         </a>
                     </div>
                     <div class="nk-menu-trigger mr-n2">
@@ -115,24 +115,24 @@
                                         <span class="nk-menu-text">Dashboard</span>
                                     </a>
                                 </li>
-                                @can('view_projects')
+                                <!-- @can('view_projects') -->
                                     <li class="nk-menu-item">
                                         <a href="{{ route('projects.all') }}" class="nk-menu-link">
                                             <span class="nk-menu-icon"><em class="icon ni ni-task" style="color: #02ba5a"></em></span>
                                             <span class="nk-menu-text">Projects</span>
                                         </a>
                                     </li>
-                                @endcan
-                                @can('view_planters')
+                                <!-- @endcan
+                                @can('view_planters') -->
                                     <li class="nk-menu-item">
                                         <a href="{{ route('planters.all') }}" class="nk-menu-link">
                                             <span class="nk-menu-icon"><em class="icon ni ni-user-alt" style="color: #d13adf"></em></span>
                                             <span class="nk-menu-text">Church Planters</span>
                                         </a>
                                     </li>
-                                @endcan
+                                <!-- @endcan
 
-                                @can('view_reports')
+                                @can('view_reports') -->
                                     <li class="nk-menu-item has-sub">
                                         <a href="#" class="nk-menu-link nk-menu-toggle">
                                             <span class="nk-menu-icon"><em class="icon ni ni-reports" style="color: #3936e4"></em></span>
@@ -162,8 +162,8 @@
                                             </li>
                                         </ul><!-- .nk-menu-sub -->
                                     </li>
-                                @endcan
-                                @canany(['view_users', 'view_roles', 'view_permissions', 'assign_country'])
+                                <!-- @endcan
+                                @canany(['view_users', 'view_roles', 'view_permissions', 'assign_country']) -->
                                     <li class="nk-menu-item has-sub">
                                         <a href="#" class="nk-menu-link nk-menu-toggle">
                                             <span class="nk-menu-icon"><em class="icon ni ni-users" style="color: #fba540"></em></span>
@@ -195,8 +195,8 @@
                                                         <span class="nk-menu-text">Permissions</span>
                                                     </a>
                                                 </li>
-                                            @endcan
-                                            @can('assign_country')
+                                            <!-- @endcan
+                                            @can('assign_country') -->
                                                 <li class="nk-menu-item">
                                                     <a href="{{ route('country_assignment.index') }}" class="nk-menu-link">
                                                         <span class="nk-menu-icon"><em
@@ -204,18 +204,18 @@
                                                         <span class="nk-menu-text">User Countries</span>
                                                     </a>
                                                 </li>
-                                            @endcan
+                                            <!-- @endcan -->
                                         </ul><!-- .nk-menu-sub -->
                                     </li><!-- .nk-menu-item -->
-                                @endcanany
-                                @can('view_coordinators')
+                                <!-- @endcanany
+                                @can('view_coordinators') -->
                                     <li class="nk-menu-item has-sub">
                                         <a href="#" class="nk-menu-link nk-menu-toggle">
                                             <span class="nk-menu-icon"><em class="icon ni ni-setting" style="color: #7e7194"></em></span>
                                             <span class="nk-menu-text">Setup</span>
                                         </a>
                                         <ul class="nk-menu-sub">
-                                            @can('view_coordinators')
+                                            <!-- @can('view_coordinators') -->
                                                 <li class="nk-menu-item">
                                                     <a href="{{ route('coordinators.all') }}" class="nk-menu-link">
                                                         <span class="nk-menu-icon"><em
@@ -223,8 +223,8 @@
                                                         <span class="nk-menu-text">Coordinators</span>
                                                     </a>
                                                 </li>
-                                            @endcan
-                                            @can('view_programs')
+                                            <!-- @endcan
+                                            @can('view_programs') -->
                                                 <li class="nk-menu-item">
                                                     <a href="{{ route('programs.all') }}" class="nk-menu-link">
                                                         <span class="nk-menu-icon"><em
@@ -232,8 +232,8 @@
                                                         <span class="nk-menu-text">Programs</span>
                                                     </a>
                                                 </li>
-                                            @endcan
-                                            @can('view_denominations')
+                                            <!-- @endcan
+                                            @can('view_denominations') -->
                                                 <li class="nk-menu-item">
                                                     <a href="{{ route('denominations.all') }}" class="nk-menu-link">
                                                         <span class="nk-menu-icon"><em
@@ -241,11 +241,13 @@
                                                         <span class="nk-menu-text">Denomations</span>
                                                     </a>
                                                 </li>
-                                            @endcan
+                                            <!-- @endcan -->
                                         </ul><!-- .nk-menu-sub -->
                                     </li><!-- .nk-menu-item -->
-                                @endcan
-                                @role('Church Planter')
+                                <!-- @endcan -->
+
+
+                                <!-- @role('Church Planter') -->
                                     <li class="nk-menu-item">
                                         <a href="{{ route('user.profile') }}" class="nk-menu-link">
                                             <span class="nk-menu-icon"><em class="icon ni ni-user"></em></span>
@@ -258,7 +260,7 @@
                                             <span class="nk-menu-text">Abc Report</span>
                                         </a>
                                     </li>
-                                @endrole
+                                <!-- @endrole -->
 
                                 {{--                            @role('Denominational Leader') --}}
                                 {{--                            <li class="nk-menu-item"> --}}
@@ -270,21 +272,6 @@
                                 {{--                            @endrole --}}
 
 
-                                {{-- Denomination Pannel Area Strat --}}
-                                @unlessrole('super_admin')
-                                    {{--                            <li class="nk-menu-item"> --}}
-                                    {{--                                <a href="{{route('user.business')}}" class="nk-menu-link"> --}}
-                                    {{--                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span> --}}
-                                    {{--                                    <span class="nk-menu-text">Profile</span> --}}
-                                    {{--                                </a> --}}
-                                    {{--                            </li> --}}
-                                    {{-- <li class="nk-menu-item">
-                                <a href="{{route('user.feedback')}}" class="nk-menu-link">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-chat-fill"></em></span>
-                                    <span class="nk-menu-text">Feedback</span>
-                                </a>
-                            </li> --}}
-                                @endunlessrole
 
 
                             </ul><!-- .nk-menu -->
@@ -319,19 +306,20 @@
                                             <div class="user-toggle">
                                                 <x-user-avatar />
                                                 <div class="user-info d-none d-xl-block">
-                                                    @php
+                                                    <!-- @php
                                                         $roles = Auth::user()
                                                             ->getRoleNames()
                                                             ->toArray();
-                                                    @endphp
+                                                    @endphp -->
                                                     <div class="user-status user-status-active">
-                                                        @foreach ($roles as $key => $role)
+                                                        <!-- @foreach ($roles as $key => $role)
                                                             {{ str_replace('_', ' ', $role) }} @if ($key + 1 != count($roles))
                                                                 ,
                                                             @endif
-                                                        @endforeach
+                                                        @endforeach -->
                                                     </div>
-                                                    <div class="user-name dropdown-indicator">{{ Auth::user()->name }}
+                                                    <div class="user-name dropdown-indicator">
+                                                        <!-- {{ Auth::user()->name }} -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -342,8 +330,12 @@
                                                     <x-user-avatar />
                                                     <div class="user-info d-none d-xl-block">
                                                         <div class="user-info">
-                                                            <span class="lead-text">{{ Auth::user()->name }}</span>
-                                                            <span class="sub-text">{{ Auth::user()->email }}</span>
+                                                            <span class="lead-text">
+                                                                <!-- {{ Auth::user()->name }} -->
+                                                            </span>
+                                                            <span class="sub-text">
+                                                                <!-- {{ Auth::user()->email }} -->
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -403,7 +395,7 @@
                     <div class="container-fluid">
                         <div class="nk-footer-wrap">
                             <div class="nk-footer-copyright"> &copy; {{ date('Y') }} Copyright reserved to
-                                Multiplication Network</a>
+                                Prophetic Kids</a>
                             </div>
 
                         </div>
