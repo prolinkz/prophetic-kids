@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<!-- Mirrored from codervent.com/bulona/demo/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Feb 2020 05:35:19 GMT -->
-<head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <meta name="description" content="Prophetic Kids Sunday School Web Application"/>
-  <meta name="author" content="Zakiullah Khan"/>
-  <title>Prophetic Kids</title>
-  <!--favicon-->
-  <link rel="icon" href="{{ url('public/assets/images/favicon.ico') }}" type="image/x-icon">
-  <!-- Bootstrap core CSS-->
-  <link href="{{ url('public/assets/css/bootstrap.min.css') }}" rel="stylesheet"/>
-  <!-- animate CSS-->
-  <link href="{{ url('public/assets/css/animate.css') }}" rel="stylesheet" type="text/css"/>
-  <!-- Icons CSS-->
-  <link href="{{ url('public/assets/css/icons.css') }}" rel="stylesheet" type="text/css"/>
-  <!-- Custom Style-->
-  <link href="{{ url('public/assets/css/app-style.css') }}" rel="stylesheet"/>
-  
-</head>
-
-<body>
-
-<!-- start loader -->
-   <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
-   <!-- end loader -->
+@section('content')
 
 <!-- Start wrapper-->
  <div id="wrapper">
@@ -41,9 +15,9 @@
 		  <div class="card-title text-uppercase text-center py-3">Sign In</div>
 		    <form>
 			  <div class="form-group">
-			  <label for="exampleInputUsername" class="sr-only">Username</label>
+			  <label for="email" class="sr-only">Email</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputUsername" class="form-control input-shadow" placeholder="Enter Username">
+				  <input type="email" id="email" class="form-control input-shadow" name="email" required placeholder="Enter Email">
 				  <div class="form-control-position">
 					  <i class="icon-user"></i>
 				  </div>
@@ -52,7 +26,7 @@
 			  <div class="form-group">
 			  <label for="exampleInputPassword" class="sr-only">Password</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="password" id="exampleInputPassword" class="form-control input-shadow" placeholder="Enter Password">
+				  <input type="password" id="Password" class="form-control input-shadow" name="password" required placeholder="Enter Password">
 				  <div class="form-control-position">
 					  <i class="icon-lock"></i>
 				  </div>
@@ -97,18 +71,4 @@
 	
 	</div><!--wrapper-->
 	
-  <!-- Bootstrap core JavaScript-->
-  <script src="{{ url('public/assets/js/jquery.min.js') }}"></script>
-  <script src="{{ url('public/assets/js/popper.min.js') }}"></script>
-  <script src="{{ url('public/assets/js/bootstrap.min.js') }}"></script>
-	
-  <!-- sidebar-menu js -->
-  <script src="{{ url('public/assets/js/sidebar-menu.js') }}"></script>
-  
-  <!-- Custom scripts -->
-  <script src="{{ url('public/assets/js/app-script.js') }}"></script>
-  
-</body>
-
-<!-- Mirrored from codervent.com/bulona/demo/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Feb 2020 05:35:19 GMT -->
-</html>
+	@endsection
