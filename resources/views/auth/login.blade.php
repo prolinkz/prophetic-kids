@@ -66,7 +66,7 @@
 			  </div>
 			 </div>
 			 <div class="form-group col-6 text-right">
-			  <a href="authentication-reset-password.html">Reset Password</a>
+			  <a href="{{ url('forgotpass') }}">Reset Password</a>
 			 </div>
 			</div>
 			 <button type="button" class="btn btn-primary btn-block">Sign In</button>
@@ -85,7 +85,7 @@
 		   </div>
 		  </div>
 		  <div class="card-footer text-center py-3">
-		    <p class="text-dark mb-0">Do not have an account? <a href="authentication-signup.html"> Sign Up here</a></p>
+		    <p class="text-dark mb-0">Forgot Your Password? <a href="{{ url('forgotpass') }}"> Reset Now</a></p>
 		  </div>
 	     </div>
     

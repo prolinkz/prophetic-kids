@@ -11,4 +11,9 @@ class AuthController extends Controller
         // echo "Hello"; die();
         return view('auth.login');
     }
+
+    public function forgotpass()
+    {
+        return view('auth.forgotpass');
+    }
 }

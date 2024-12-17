@@ -14,3 +14,5 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::get('/', [AuthController::class, 'login']);
+
+Route::get('forgotpass', [AuthController::class, 'forgotpass']);
