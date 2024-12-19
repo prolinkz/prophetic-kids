@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +18,7 @@ use App\Http\Controllers\AuthController;
 Route::get('/', [AuthController::class, 'login']);
 
 Route::get('forgotpass', [AuthController::class, 'forgotpass']);
+
+Route::get('admin/dashboard', [DashboardController::class, 'dashboard']);
+
+Route::get('user/profile', [UserController::class, 'profile']);

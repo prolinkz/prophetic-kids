@@ -15,9 +15,9 @@
         <p class="pb-2">Please enter your registered email address, you will receive a link to create a new password.</p>
         <form>
           <div class="form-group">
-          <label for="exampleInputEmailAddress" class="">Your Email Address</label>
+          <label for="EmailAddress" class="">Your Email Address</label>
            <div class="position-relative has-icon-right">
-              <input type="text" id="exampleInputEmailAddress" class="form-control input-shadow" placeholder="Email Address">
+              <input type="email" id="EmailAddress" class="form-control input-shadow" placeholder="Enter Your Email Address">
               <div class="form-control-position">
                   <i class="icon-envelope-open"></i>
               </div>

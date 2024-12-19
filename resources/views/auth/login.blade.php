@@ -12,7 +12,7 @@
 		 	<div class="text-center">
 		 		<img src="{{ url('public/assets/images/logo.jpg') }}" alt="logo icon">
 		 	</div>
-		  <div class="card-title text-uppercase text-center py-3">Sign In</div>
+		  <div class="card-title text-uppercase text-center py-3">Sign In To Your Account</div>
 		    <form>
 			  <div class="form-group">
 			  <label for="email" class="sr-only">Email</label>
@@ -59,16 +59,7 @@
 		   </div>
 		  </div>
 		  <div class="card-footer text-center py-3">
-		    <p class="text-dark mb-0">Forgot Your Password? <a href="{{ url('forgotpass') }}"> Reset Now</a></p>
+		    <p class="text-dark mb-0">Forgot Your Password? <a href="{{ url('admin/dashboard') }}"> Reset Now</a></p>
 		  </div>
-	     </div>
-    
-     <!--Start Back To Top Button-->
-    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
-    <!--End Back To Top Button-->
-	
-	
-	
-	</div><!--wrapper-->
-	
+	     </div>	
 	@endsection
